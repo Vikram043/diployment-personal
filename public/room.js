@@ -26,7 +26,7 @@ createButton.addEventListener('click', (e) => {
         }
     }, 500);
 
-    window.location.href = "https://stalwart-cassata-e82d91.netlify.app/screenshare.html?room=" + uuidv4();
+    window.location.href = "https://mirror-mate-share.onrender.com?room=" + uuidv4();
 
 });
 
@@ -37,7 +37,7 @@ joinBut.addEventListener('click', (e) => {
         return;
     }
     const code = codeCont.value;
-    location.href = "https://stalwart-cassata-e82d91.netlify.app/screenshare.html?room="+code;
+    location.href = "https://mirror-mate-share.onrender.com?room="+code;
 })
 
 codeCont.addEventListener('change', (e) => {

@@ -1,4 +1,4 @@
-const socket=io('https://juvenile-tidy-seal.glitch.me',{transports:["websocket"]})  
+const socket=io('https://mirror-mate-share.onrender.com',{transports:["websocket"]})  
 const myvideo = document.querySelector("#vd1");
 const roomid = params.get("room");
 let username;
