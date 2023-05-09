@@ -19,6 +19,13 @@ app.get('/', (req, res) => {
 app.get('/add', (req, res) => {
     res.send("home")
 })
+app.get('/go', (req, res) => {
+   try {
+    res.render('screenshare')
+   } catch (error) {
+    res.send({message:error.message})
+   }
+})
 const server=app.listen(PORT,()=>{
     console.log(`Server is running at port ${PORT}`)
 })
