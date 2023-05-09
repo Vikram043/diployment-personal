@@ -16,6 +16,9 @@ app.set("view engine", "ejs")
 app.get('/', (req, res) => {
     res.render("./view/screenshare.ejs")
 })
+app.get('/add', (req, res) => {
+    res.send("home")
+})
 const server=app.listen(PORT,()=>{
     console.log(`Server is running at port ${PORT}`)
 })
