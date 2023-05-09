@@ -7,6 +7,7 @@ const app = express();
 app.use(express.json())
 
 app.use(cors())
+
 app.set("view engine", "ejs")
 app.use(express.static('public'))
 
