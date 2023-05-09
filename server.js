@@ -10,10 +10,10 @@ app.use(express.json())
 
 app.use(cors())
 app.set("view engine", "ejs")
-app.use(express.static('public'))
+//app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.render("screenshare")
+    res.render("./view/screenshare.ejs")
 })
 const server=app.listen(PORT,()=>{
     console.log(`Server is running at port ${PORT}`)
