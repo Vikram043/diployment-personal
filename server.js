@@ -7,6 +7,12 @@ const app = express();
 app.use(express.json());
 
 
+app.set("view engine", "ejs")
+app.use(express.static('public'))
+
+app.get('/', (req, res) => {
+    res.render("screenshare")
+})
 const server=app.listen(PORT,()=>{
     console.log(`Server is running at port ${PORT}`)
 })
@@ -14,12 +20,6 @@ const server=app.listen(PORT,()=>{
 let io=require("socket.io")(server)
 
 
-app.set("view engine", "ejs")
-app.use(express.static('public'))
-
-app.get('/', (req, res) => {
-    res.render("screenshare")
-})
     
 let userList = {};
 let rooms = {};
