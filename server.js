@@ -10,11 +10,11 @@ app.use(express.json())
 
 app.use(cors())
 
-app.set('view', path.join(__dirname, 'view'))
-app.set("view engine", "ejs")
+// app.set('view', path.join(__dirname, 'view'))
+// app.set("view engine", "ejs")
 
 app.get('/', (req, res) => {
-    res.render("./view/screenshare.ejs")
+    res.render("./view/screenshare.html")
 })
 app.get('/add', (req, res) => {
     res.send("home")
